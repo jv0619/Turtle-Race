@@ -1,3 +1,7 @@
+I created main.exe file located in Turtle Race folder. You can directly run the game by main.exe
+Hope you all are try the game...
+
+
 Functions:-
 
 1. make_setup()
