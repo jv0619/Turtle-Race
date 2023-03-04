@@ -111,28 +111,28 @@ def play_game():
 set_title()
 write_finish()
 make_setup((-250, y), n*50, 500, 5, y)
-# turtles = []
-# colors = ["red", "blue", "yellow", "green", "white"]
-# ready_turtles()
-# is_want_to_play = True
-# user_want = ""
-#
-#
-# while is_want_to_play:
-#     if user_want not in colors:
-#         user_choice = screen.textinput("Make a Bet", prompt="Which turtle going to be win: ")
-#     winner = play_game()
-#     text = "Oho... You Lost... \U0001F643"
-#     if winner == user_choice:
-#         text = "You Win... \U0001F929 \U0001F973"
-#     user_want = screen.textinput(text, prompt="Do you want to play again ? : ")
-#     if user_want == "yes":
-#         re_ready()
-#     elif user_want == "no":
-#         is_want_to_play = False
-#     elif user_want in colors:
-#         re_ready()
-#     else:
-#         is_want_to_play = False
+turtles = []
+colors = ["red", "blue", "yellow", "green", "white"]
+ready_turtles()
+is_want_to_play = True
+user_want = ""
+
+
+while is_want_to_play:
+    if user_want not in colors:
+        user_choice = screen.textinput("Make a Bet", prompt="Which turtle going to be win: ")
+    winner = play_game()
+    text = "Oho... You Lost... \U0001F643"
+    if winner == user_choice:
+        text = "You Win... \U0001F929 \U0001F973"
+    user_want = screen.textinput(text, prompt="Do you want to play again ? : ")
+    if user_want == "yes":
+        re_ready()
+    elif user_want == "no":
+        is_want_to_play = False
+    elif user_want in colors:
+        re_ready()
+    else:
+        is_want_to_play = False
 
 screen.exitonclick()
